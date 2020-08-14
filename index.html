@@ -1,129 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rajesh Chauhan - Javascript, ES6, Angular, .Net Core Web API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="rajesh chauhan" />
+    <meta name="keywords" content="trainer javascript angular developer" />
+    <meta name="author" content="rajesh chauhan" />
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Rajesh Chauhan - Javascript, ES6, Angular, .Net Core Web API</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="rajesh chauhan" />
-	<meta name="keywords" content="trainer javascript angular developer" />
-	<meta name="author" content="rajesh chauhan" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
 
-	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700"
+      rel="stylesheet"
+    />
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <!-- Flaticons  -->
+    <!-- <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"> -->
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="theme-color" content="#e50000" />
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<!-- <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"> -->
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="theme-color" content="#e50000">
+    <link rel="manifest" href="manifest.json" />
 
-	<link rel="manifest" href="manifest.json">
-
-
-<!-- Add this to your HEAD if you want to load the 
+    <!-- Add this to your HEAD if you want to load the 
 apple-touch-icons from another dir than your sites' root -->
 
-<link rel="apple-touch-icon" href="images/touch-icons/apple-touch-icon-iphone-60x60.png">
-<link rel="apple-touch-icon" sizes="60x60" href="images/touch-icons/apple-touch-icon-ipad-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/touch-icons/apple-touch-icon-iphone-retina-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="images/touch-icons/apple-touch-icon-ipad-retina-152x152.png">
-			
+    <link
+      rel="apple-touch-icon"
+      href="images/touch-icons/apple-touch-icon-iphone-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/touch-icons/apple-touch-icon-ipad-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/touch-icons/apple-touch-icon-iphone-retina-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/touch-icons/apple-touch-icon-ipad-retina-152x152.png"
+    />
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-</head>
+  <body>
+    <div id="colorlib-page">
+      <div class="container-wrap">
+        <a
+          href="#"
+          class="js-colorlib-nav-toggle colorlib-nav-toggle"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="false"
+          aria-controls="navbar"
+          ><i></i
+        ></a>
+        <aside
+          id="colorlib-aside"
+          role="complementary"
+          class="border js-fullheight"
+        >
+          <div class="text-center">
+            <div
+              class="author-img"
+              style="background-image: url(images/about.jpg);"
+            ></div>
+            <h1 id="colorlib-logo"><a href="index.html">Rajesh Chauhan</a></h1>
+            <span class="position"
+              ><a href="#"
+                >Developer & Trainer <br />(Javascript, Angular & .Net Core)
+              </a></span
+            >
+          </div>
+          <nav id="colorlib-main-menu" role="navigation" class="navbar">
+            <div id="navbar" class="collapse">
+              <ul>
+                <!-- <li class="active"><a href="#" data-nav-section="home">Home</a></li> -->
+                <li><a href="#" data-nav-section="about">About</a></li>
+                <li><a href="#" data-nav-section="projects">Projects</a></li>
+                <li><a href="#" data-nav-section="skills">Skills</a></li>
+                <li>
+                  <a href="#" data-nav-section="experience">Experience</a>
+                </li>
+                <!-- <li><a href="#" data-nav-section="certificates">Certificates</a></li> -->
+                <!-- <li><a href="#" data-nav-section="blog">Certificates</a></li> -->
+                <!-- <li><a href="#" data-nav-section="contact">Contact</a></li> -->
+                <!-- <li><a href="#" data-nav-section="work">Useful Web Resources</a></li> -->
+              </ul>
+            </div>
+          </nav>
 
-<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-				aria-expanded="false" aria-controls="navbar"><i></i></a>
-			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-				<div class="text-center">
-					<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-					<h1 id="colorlib-logo"><a href="index.html">Rajesh Chauhan</a></h1>
-					<span class="position"><a href="#">Developer & Trainer <br />(Javascript, Angular & .Net Core)
-						</a></span>
-				</div>
-				<nav id="colorlib-main-menu" role="navigation" class="navbar">
-					<div id="navbar" class="collapse">
-						<ul>
-							<!-- <li class="active"><a href="#" data-nav-section="home">Home</a></li> -->
-							<li><a href="#" data-nav-section="about">About</a></li>
-							<li><a href="#" data-nav-section="projects">Projects</a></li>
-							<li><a href="#" data-nav-section="skills">Skills</a></li>
-							<li><a href="#" data-nav-section="experience">Experience</a></li>
-							<!-- <li><a href="#" data-nav-section="certificates">Certificates</a></li> -->
-							<!-- <li><a href="#" data-nav-section="blog">Certificates</a></li> -->
-							<!-- <li><a href="#" data-nav-section="contact">Contact</a></li> -->
-							<!-- <li><a href="#" data-nav-section="work">Useful Web Resources</a></li> -->
-						</ul>
-					</div>
-				</nav>
+          <div class="colorlib-footer">
+            <p>
+              <small
+                >&copy;
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="icon-heart" aria-hidden="true"></i> by
+                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </small>
+            </p>
 
-				<div class="colorlib-footer">
-					<p><small>&copy;
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script> All rights reserved | This
-							template is made with <i class="icon-heart" aria-hidden="true"></i> by <a
-								href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							</span></small></p>
+            <h2>
+              <ul>
+                <li>
+                  <a href="tel:+9560886633"><i class="fa fa-phone"></i></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rajeshchauhan23102008"
+                    target="_blank"
+                    ><i class="fa fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/chauhan23102008" target="_blank"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/rajesh-chauhan-74220b2b"
+                    target="_blank"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="mailto: rajesh.chauhan23102008@gmail.com">
+                    <i class="fa fa-envelope-o"></i
+                  ></a>
+                </li>
+              </ul>
+            </h2>
 
-							<h2><ul >
-								<li><a href="tel:+9560886633"><i
-									class="fa fa-phone"></i></a></li>
-								<li><a href="https://github.com/rajeshchauhan23102008" target="_blank"><i
-											class="fa fa-github"></i></a></li>
-								<li><a href="https://twitter.com/chauhan23102008" target="_blank"><i
-											class="fa fa-twitter"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/rajesh-chauhan-74220b2b" target="_blank"><i
-											class="fa fa-linkedin"></i></a></li>
-								<li><a href="mailto: rajesh.chauhan23102008@gmail.com">
-										<i class="fa fa-envelope-o"></i></a></li>
-							</ul></h2>
-					
-				</div>
+            <ul>
+              <li>
+                <a
+                  href="https://www.gogoodlearn.com/policies/terms-and-conditions.html"
+                  rel="nofollow"
+                  title="Terms and Conditions"
+                  >Terms and Conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.gogoodlearn.com/policies/privacy-policy.html"
+                  rel="nofollow"
+                  title="Privacy Policy"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.gogoodlearn.com/policies/refund-policy.html"
+                  rel="nofollow"
+                  title="Refund Policy"
+                  >Refund Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.gogoodlearn.com/policies/disclaimer-policy.html"
+                  rel="nofollow"
+                  title="Disclaimer Policy"
+                  >Disclaimer Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.gogoodlearn.com/policies/refer-and-earn-policy.html"
+                  rel="nofollow"
+                  title="Refer and Earn Policy"
+                  >Refer & Earn Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
 
-			</aside>
-
-			<div id="colorlib-main">
-				<!-- <section id="colorlib-hero" class="js-fullheight" data-section="home">
+        <div id="colorlib-main">
+          <!-- <section id="colorlib-hero" class="js-fullheight" data-section="home">
 					<div class="flexslider js-fullheight">
 						<ul class="slides">
 							<li style="background-image: url(images/img_bg_1.jpg);">
@@ -170,61 +275,78 @@ apple-touch-icons from another dir than your sites' root -->
 					</div>
 				</section> -->
 
-				<section class="colorlib-about" data-section="about">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="col-md-12">
-										<div class="about-desc">
-											<span class="heading-meta">About Us</span>
-											<h2 class="colorlib-heading">Who Am I?</h2>
-											<p>Software Engineer with more than
-												10
-												years of experience primarily with Microsoft Technology Stack.<br><br>
-												Currently
-												working as
-												an <strong>Independent Trainer </strong><i
-													class="fa fa-hand-o-down"></i>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-										<div class="services color-1">
-											<span class="icon2">
-												<img src="images/js2-icon.png" alt="">
-												<!-- <i class="jsicon"></i> -->
-											</span>
-											<h3>Modern Javascript</h3> <strong> ES6, Webpack, NPM & Babel</strong>
-										</div>
-									</div>
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-										<div class="services color-2">
-											<span class="icon2">
-												<!-- <i class="icon-globe-outline"></i> -->
-												<img src="images/angular-icon.png" alt=""></span>
-											<h3>Angular 8 <br><br /><br /><br><br></h3>
-										</div>
-									</div>
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-										<div class="services color-3">
-											<span class="icon2">
-												<!-- <i class="icon-data"></i> -->
-												<img src="images/dotnetcore-icon.png" alt="">
-											</span>
-											<h3>.NET Core <br />Web API <br><br><br><br></h3>
-										</div>
-									</div>
-									<!-- <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+          <section class="colorlib-about" data-section="about">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="row row-bottom-padded-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="col-md-12">
+                      <div class="about-desc">
+                        <span class="heading-meta">About Us</span>
+                        <h2 class="colorlib-heading">Who Am I?</h2>
+                        <p>
+                          Software Engineer with more than 10 years of
+                          experience primarily with Microsoft Technology
+                          Stack.<br /><br />
+                          Currently working as an
+                          <strong>Independent Trainer </strong
+                          ><i class="fa fa-hand-o-down"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="services color-1">
+                        <span class="icon2">
+                          <img src="images/js2-icon.png" alt="" />
+                          <!-- <i class="jsicon"></i> -->
+                        </span>
+                        <h3>Modern Javascript</h3>
+                        <strong> ES6, Webpack, NPM & Babel</strong>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <div class="services color-2">
+                        <span class="icon2">
+                          <!-- <i class="icon-globe-outline"></i> -->
+                          <img src="images/angular-icon.png" alt=""
+                        /></span>
+
+                        <h3>Angular 8 <br /><br /><br /><br /><br /></h3>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInTop"
+                    >
+                      <div class="services color-3">
+                        <span class="icon2">
+                          <!-- <i class="icon-data"></i> -->
+                          <img src="images/dotnetcore-icon.png" alt="" />
+                        </span>
+                        <h3>
+                          .NET Core <br />Web API <br /><br /><br /><br />
+                        </h3>
+                      </div>
+                    </div>
+                    <!-- <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
 										<div class="services color-4">
 											<span class="icon2"><i class="icon-phone3"></i></span>
 											<h3>Application</h3>
 										</div>
 									</div> -->
-								</div>
-								<!-- <div class="row">
+                  </div>
+                  <!-- <div class="row">
 									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 										<div class="hire">
 											<h2>I am happy to know you <br>that 300+ projects done sucessfully!</h2>
@@ -232,128 +354,170 @@ apple-touch-icons from another dir than your sites' root -->
 										</div>
 									</div>
 								</div> -->
-							</div>
-						</div>
-					</div>
-				</section>
+                </div>
+              </div>
+            </div>
+          </section>
 
-				<section class="colorlib-services" data-section="projects">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Projects</span>
-								<h2 class="colorlib-heading">Here are some of my personal projects</h2>
-							</div>
-						</div>
-						<div class="row row-pt-md">
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-1">
-									<span class="icon">
-										<i class="fa fa-gamepad"></i>
-									</span>
-									<div class="desc">
-										<h3>Dice Pig Game</h3>
-										<strong>Javascript</strong><br>DOM Manipulation<br><br><br>
-										<a href="https://dom-dice-pig-game.netlify.com/"
-											target="_blank"><i class="fa fa-tv"></i> Demo</a><br>
-										<a href="https://github.com/rajeshchauhan23102008/dom-pig-game"
-											target="_blank"><i class="fa fa-github"></i> Code</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-2">
-									<span class="icon">
-										<i class="fa fa-usd"></i>
-									</span>
-									<div class="desc">
-										<h3>Income & Expense App</h3>
-										<strong>Javascript</strong><br />Module Pattern, Event Delegation<br><br>
-										<a href="https://income-expense-app.netlify.com/"
-											target="_blank"><i class="fa fa-tv"></i> Demo</a><br>
-										<a href="https://github.com/rajeshchauhan23102008/income-expense-app"
-											target="_blank"><i class="fa fa-github"></i> Code</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-3">
-									<span class="icon">
-										<i class="fa fa-cutlery"></i>
-									</span>
-									<div class="desc">
-										<h3>Food App</h3>
-										<strong>Modern Javascript</strong><br />ES6/2015/2017, Webpack, NPM & Babel<br><br>
-										<a href="https://the-food-app.netlify.com/" target="_blank"><i
-												class="fa fa-tv"></i> Demo</a><br>
-										<a href="https://github.com/rajeshchauhan23102008/food-app" target="_blank"><i
-												class="fa fa-github"></i> Code</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-4">
-									<span class="icon">
-										<i class="fa fa-cutlery"></i>
-									</span>
-									<div class="desc">
-										<h3>The Recipe App</h3>
-										<strong>Angular 8</strong><br /><br>
-										<a href="https://therecipeapp-ca066.firebaseapp.com"
-											target="_blank"><i class="fa fa-tv"></i> Demo</a><br>
-										<a href="https://github.com/rajeshchauhan23102008/recipe-shopping-app"
-											target="_blank"><i class="fa fa-github"></i> Code</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-5">
-									<span class="icon">
-										<i class="fa fa-male"></i>
-										<i class="fa fa-female"></i>
-									</span>
-									<div class="desc">
-										<h3>The Dating App</h3>
-										<strong>Angular 8 <br>&<br> .Net Core Web API</strong><br />
-										<!-- <a href="https://rajeshchauhan23102008.github.io/recipe-shopping-app"
+          <section class="colorlib-services" data-section="projects">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <span class="heading-meta">Projects</span>
+                  <h2 class="colorlib-heading">
+                    Here are some of my personal projects
+                  </h2>
+                </div>
+              </div>
+              <div class="row row-pt-md">
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-1">
+                    <span class="icon">
+                      <i class="fa fa-gamepad"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Dice Pig Game</h3>
+                      <strong>Javascript</strong><br />DOM Manipulation<br /><br /><br />
+                      <a
+                        href="https://dom-dice-pig-game.netlify.com/"
+                        target="_blank"
+                        ><i class="fa fa-tv"></i> Demo</a
+                      ><br />
+                      <a
+                        href="https://github.com/rajeshchauhan23102008/dom-pig-game"
+                        target="_blank"
+                        ><i class="fa fa-github"></i> Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-2">
+                    <span class="icon">
+                      <i class="fa fa-usd"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Income & Expense App</h3>
+                      <strong>Javascript</strong><br />Module Pattern, Event
+                      Delegation<br /><br />
+                      <a
+                        href="https://income-expense-app.netlify.com/"
+                        target="_blank"
+                        ><i class="fa fa-tv"></i> Demo</a
+                      ><br />
+                      <a
+                        href="https://github.com/rajeshchauhan23102008/income-expense-app"
+                        target="_blank"
+                        ><i class="fa fa-github"></i> Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-3">
+                    <span class="icon">
+                      <i class="fa fa-cutlery"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Food App</h3>
+                      <strong>Modern Javascript</strong><br />ES6/2015/2017,
+                      Webpack, NPM & Babel<br /><br />
+                      <a
+                        href="https://the-food-app.netlify.com/"
+                        target="_blank"
+                        ><i class="fa fa-tv"></i> Demo</a
+                      ><br />
+                      <a
+                        href="https://github.com/rajeshchauhan23102008/food-app"
+                        target="_blank"
+                        ><i class="fa fa-github"></i> Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-4">
+                    <span class="icon">
+                      <i class="fa fa-cutlery"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>The Recipe App</h3>
+                      <strong>Angular 8</strong><br /><br />
+                      <a
+                        href="https://therecipeapp-ca066.firebaseapp.com"
+                        target="_blank"
+                        ><i class="fa fa-tv"></i> Demo</a
+                      ><br />
+                      <a
+                        href="https://github.com/rajeshchauhan23102008/recipe-shopping-app"
+                        target="_blank"
+                        ><i class="fa fa-github"></i> Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-5">
+                    <span class="icon">
+                      <i class="fa fa-male"></i>
+                      <i class="fa fa-female"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>The Dating App</h3>
+                      <strong
+                        >Angular 8 <br />&<br />
+                        .Net Core Web API</strong
+                      ><br />
+                      <!-- <a href="https://rajeshchauhan23102008.github.io/recipe-shopping-app"
 											target="_blank"><i class="fa fa-tv"></i> Demo</a><br> -->
-										<a href="https://github.com/rajeshchauhan23102008/DatingApp" target="_blank"><i
-												class="fa fa-github"></i> Code</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-6">
-									<span class="icon">
-										<i class="fa fa-graduation-cap"></i>
-									</span>
-									<div class="desc">
-										<h3>Learn Typescript</h3>
-										<strong>TypeScript</strong><br><br><br />
-										<!-- <a href="https://rajeshchauhan23102008.github.io/recipe-shopping-app"
+                      <a
+                        href="https://github.com/rajeshchauhan23102008/DatingApp"
+                        target="_blank"
+                        ><i class="fa fa-github"></i> Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-6">
+                    <span class="icon">
+                      <i class="fa fa-graduation-cap"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Learn Typescript</h3>
+                      <strong>TypeScript</strong><br /><br /><br />
+                      <!-- <a href="https://rajeshchauhan23102008.github.io/recipe-shopping-app"
 											target="_blank"><i class="fa fa-tv"></i> Demo</a><br> -->
-										<a href="https://github.com/rajeshchauhan23102008/learn-typescript"
-											target="_blank"><i class="fa fa-github"></i> Code</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-1">
-									<span class="icon">
-										<i class="fa fa-graduation-cap"></i>
-									</span>
-									<div class="desc">
-										<h3>Learn Angular</h3>
-										<strong>Angular</strong><br><br><br />
-										<!-- <a href="https://rajeshchauhan23102008.github.io/recipe-shopping-app"
+                      <a
+                        href="https://github.com/rajeshchauhan23102008/learn-typescript"
+                        target="_blank"
+                        ><i class="fa fa-github"></i> Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-1">
+                    <span class="icon">
+                      <i class="fa fa-graduation-cap"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Learn Angular</h3>
+                      <strong>Angular</strong><br /><br /><br />
+                      <!-- <a href="https://rajeshchauhan23102008.github.io/recipe-shopping-app"
 											target="_blank"><i class="fa fa-tv"></i> Demo</a><br> -->
-										<a href="https://github.com/rajeshchauhan23102008/angular-poc-projects"
-											target="_blank"><i class="fa fa-github"></i> Code</a>
-									</div>
-								</div>
-							</div>
-<!-- 
+                      <a
+                        href="https://github.com/rajeshchauhan23102008/angular-poc-projects"
+                        target="_blank"
+                        ><i class="fa fa-github"></i> Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- 
 							<div class="col-md-4 text-center animate-box">
 								<div class="services color-2">
 									<span class="icon">
@@ -368,11 +532,11 @@ apple-touch-icons from another dir than your sites' root -->
 								</div>
 							</div>
 							 -->
-						</div>
-					</div>
-				</section>
+              </div>
+            </div>
+          </section>
 
-				<!-- <div id="colorlib-counter" class="colorlib-counters"
+          <!-- <div id="colorlib-counter" class="colorlib-counters"
 					style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
 					<div class="overlay"></div>
 					<div class="colorlib-narrow-content">
@@ -403,317 +567,507 @@ apple-touch-icons from another dir than your sites' root -->
 					</div>
 				</div> -->
 
-				<section class="colorlib-skills" data-section="skills">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">My Specialty</span>
-								<h2 class="colorlib-heading animate-box">My Skills</h2>
-							</div>
-						</div>
-						<div class="row">
-							<!-- <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+          <section class="colorlib-skills" data-section="skills">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <span class="heading-meta">My Specialty</span>
+                  <h2 class="colorlib-heading animate-box">My Skills</h2>
+                </div>
+              </div>
+              <div class="row">
+                <!-- <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas,
 									wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
 									She packed her seven versalia, put her initial into the belt and made herself on the
 									way.</p>
 							</div> -->
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Javascript</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>75%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Typescript</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>75%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>.Net Core</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>85%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Angular</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>60%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>C#</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>85%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>VS Code</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>90%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Software Design Principles</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>80%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>GIT</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>80%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Agile Methodology</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>80%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Ubuntu</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>70%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>People Management</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>80%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>RabbitMQ</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>80%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Project Management</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>80%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Microservices</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>80%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>End 2 End Software Delivery</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>80%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Unit Testing</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>80%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Teaching <i class="fa fa-heart-o"></i></h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!-- <span>80%</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>and few more... <i class="fa fa-smile-o"></i></h3>
-									<!-- <div class="progress">
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="progress-wrap">
+                    <h3>Javascript</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-1"
+                        role="progressbar"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>75%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="progress-wrap">
+                    <h3>Typescript</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-6"
+                        role="progressbar"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>75%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="progress-wrap">
+                    <h3>.Net Core</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-2"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>85%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Angular</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-3"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>60%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="progress-wrap">
+                    <h3>C#</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-4"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>85%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>VS Code</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-5"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>90%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Software Design Principles</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-6"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>80%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>GIT</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-1"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>80%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Agile Methodology</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-2"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>80%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="progress-wrap">
+                    <h3>Ubuntu</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-3"
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>70%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>People Management</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-4"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>80%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>RabbitMQ</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-5"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>80%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Project Management</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-6"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>80%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Microservices</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-1"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>80%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>End 2 End Software Delivery</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-2"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>80%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Unit Testing</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-3"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>80%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Teaching <i class="fa fa-heart-o"></i></h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-4"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      >
+                        <!-- <span>80%</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>and few more... <i class="fa fa-smile-o"></i></h3>
+                    <!-- <div class="progress">
 										<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
 											aria-valuemin="0" aria-valuemax="100" style="width:100%">
 											<span>80%</span>
 										</div>
 									</div> -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-				<section class="colorlib-experience" data-section="experience">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Experience</span>
-								<h2 class="colorlib-heading animate-box">Work Experience</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="timeline-centered">
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-										<div class="timeline-entry-inner">
+          <section class="colorlib-experience" data-section="experience">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <span class="heading-meta">Experience</span>
+                  <h2 class="colorlib-heading animate-box">Work Experience</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="timeline-centered">
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-1">
+                          <i class="icon-pen2"></i>
+                        </div>
 
-											<div class="timeline-icon color-1">
-												<i class="icon-pen2"></i>
-											</div>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#">Freelance Trainer</a>
+                            <span>2018-Till Date</span>
+                          </h2>
+                          <p>
+                            Dedicated to provide
+                            <strong>high quality, practical</strong> software
+                            development training courses with a strong focus on
+                            <strong>learning by doing</strong>. Not offering
+                            hundreds of training courses, but that is due to
+                            focus on <strong> quality over quantity.</strong>
+                          </p>
+                        </div>
+                      </div>
+                    </article>
 
-											<div class="timeline-label">
-												<h2><a href="#">Freelance Trainer</a>
-													<span>2018-Till Date</span></h2>
-												<p>Dedicated to provide <strong>high quality, practical</strong>
-													software development
-													training courses with a strong focus on <strong>learning by
-														doing</strong>. Not
-													offering hundreds of training courses, but that is due to
-													focus on <strong> quality over quantity.</strong></p>
-											</div>
-										</div>
-									</article>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-2">
+                          <i class="icon-pen2"></i>
+                        </div>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#">IT Analyst at Johnson Controls</a>
+                            <span>2018-2018</span>
+                          </h2>
+                          <p>
+                            Responsible for maintaining inbuilt .Net Framework
+                            based Software Product for Building Automation
+                            System.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
 
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-3">
+                          <i class="icon-pen2"></i>
+                        </div>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#"
+                              >Team Lead at MPower Softcomm Pvt Ltd.</a
+                            >
+                            <span>2014-2018</span>
+                          </h2>
+                          <p>
+                            Responsible for End 2 End deliveries of Wallet, Bill
+                            Payments and other Software for Domestic &
+                            International Clients.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
 
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-2">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#">IT Analyst at Johnson Controls</a>
-													<span>2018-2018</span></h2>
-												<p>Responsible for maintaining inbuilt .Net Framework based Software
-													Product for Building
-													Automation System.</p>
-											</div>
-										</div>
-									</article>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInTop"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-4">
+                          <i class="icon-pen2"></i>
+                        </div>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#"
+                              >Software Engineer at Net4 India Limited</a
+                            >
+                            <span>2007-2013</span>
+                          </h2>
+                          <p>
+                            Responsible for Handling entire software suite for
+                            VOIP based calling also handled software for
+                            ISP(Interner Service Provider) Services.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
 
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-3">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#">Team Lead at MPower Softcomm Pvt Ltd.</a>
-													<span>2014-2018</span></h2>
-												<p>Responsible for End 2 End deliveries of Wallet, Bill Payments and
-													other
-													Software for Domestic &
-													International Clients.</p>
-											</div>
-										</div>
-									</article>
+                    <article
+                      class="timeline-entry begin animate-box"
+                      data-animate-effect="fadeInBottom"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-none"></div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-4">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#">Software Engineer at Net4 India Limited</a>
-													<span>2007-2013</span></h2>
-												<p>Responsible for Handling entire software suite for VOIP based calling
-													also handled software for ISP(Interner Service Provider) Services.
-												</p>
-											</div>
-										</div>
-									</article>
-
-									<article class="timeline-entry begin animate-box"
-										data-animate-effect="fadeInBottom">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-none">
-											</div>
-										</div>
-									</article>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- <section class="colorlib-education" data-section="certificates">
+          <!-- <section class="colorlib-education" data-section="certificates">
 					<div class="colorlib-narrow-content">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
@@ -841,7 +1195,7 @@ apple-touch-icons from another dir than your sites' root -->
 					</div>
 				</section> -->
 
-				<!-- <section class="colorlib-work" data-section="work">
+          <!-- <section class="colorlib-work" data-section="work">
 					<div class="colorlib-narrow-content">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
@@ -958,7 +1312,7 @@ apple-touch-icons from another dir than your sites' root -->
 					</div>
 				</section> -->
 
-				<!-- <section class="colorlib-blog" data-section="blog">
+          <!-- <section class="colorlib-blog" data-section="blog">
 					<div class="colorlib-narrow-content">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
@@ -1017,7 +1371,7 @@ apple-touch-icons from another dir than your sites' root -->
 					</div>
 				</section> -->
 
-				<!-- <section class="colorlib-contact" data-section="contact">
+          <!-- <section class="colorlib-contact" data-section="contact">
 					<div class="colorlib-narrow-content">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
@@ -1088,39 +1442,37 @@ apple-touch-icons from another dir than your sites' root -->
 						</div>
 					</div>
 				</section> -->
+        </div>
+        <!-- end:colorlib-main -->
+      </div>
+      <!-- end:container-wrap -->
+    </div>
+    <!-- end:colorlib-page -->
 
-			</div><!-- end:colorlib-main -->
-		</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Counters -->
+    <script src="js/jquery.countTo.js"></script>
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/main.js"></script>
 
-
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
-
-	<script>
-		if('serviceWorker' in navigator) {
-		  navigator.serviceWorker
-				   .register('/sw.js')
-				   .then(function() { console.log("Service Worker Registered"); });
-		}
-		</script>
-
-
-</body>
-
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').then(function () {
+          console.log('Service Worker Registered');
+        });
+      }
+    </script>
+  </body>
 </html>
